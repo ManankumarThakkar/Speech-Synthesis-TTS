@@ -100,3 +100,16 @@ if(synth.onvoiceschanged !== undefined) {
 
     //voice select change
     voiceSelect.addEventListener('change', e => speak ());
+
+// SOCIAL Media JS
+const floating_button = document.querySelector('.floating-button');
+const close_button = document.querySelector('.close-button');
+const social_media_container = document.querySelector('.social-media-container');
+
+floating_button.addEventListener('click', () => {
+  social_media_container.classList.toggle('visible')
+});
+
+close_button.addEventListener('click', () => {
+  social_media_container.classList.remove('visible')
+});
